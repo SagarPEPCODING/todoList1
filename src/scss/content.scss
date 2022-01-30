@@ -1,0 +1,96 @@
+@import "./layout.scss";
+
+.key_content {
+  @include displayFlexMixin;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 10px;
+  // text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  align-items: center;
+}
+
+.key-content.btns-container {
+  @include displayFlexMixin;
+  flex-direction: row;
+}
+
+.expand_contract_btns {
+  @include displayFlexMixin;
+  flex-direction: row;
+  cursor: pointer;
+  margin: 4px;
+  align-items: center;
+}
+
+.ex-btn__ {
+  @include displayFlexMixin;
+}
+
+.keyContainer {
+  flex-direction: row;
+  display: flex;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.btn {
+  margin: 1px;
+  border: 1px solid #715f5f;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.displayFlex {
+  @include displayFlex_DirectionColumn;
+}
+
+.displayFlex > .displayFlex.margin10px {
+  border-radius: 5px;
+  margin-left: 30px;
+  width: fit-content;
+}
+
+.addpostcontainer,
+.editpostcontainer {
+  margin: 10px;
+  margin-left: 25px;
+  display: flex;
+}
+
+.key-content.btns-container {
+  @include displayFlexMixin;
+  justify-content: $justify-SpaceBetween;
+  height: 50px;
+  align-items: center;
+}
+
+.addbtn {
+  @include displayFlexMixin;
+  margin: 10px;
+  justify-content: $justify-Content;
+  width: 100px;
+}
+
+@media screen and (max-width: 1010px) {
+  .expand_contract_btns {
+    margin: 4px !important;
+  }
+
+  .key_content {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 4px;
+  }
+
+  .addbtn {
+    margin: 4px;
+  }
+}
+
+.bi {
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+$justify-Content: space-around;
+$backGround-color: #080e61;
+$justify-SpaceBetween: space-between;
+
+@mixin displayFlexMixin {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin displayFlexJustifyAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin displayFlex_DirectionColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
