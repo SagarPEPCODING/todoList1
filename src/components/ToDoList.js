@@ -42,6 +42,7 @@ function ToDoList() {
 
   function addPostClicked(event) {
     event.preventDefault();
+    // if(enterValue.length > 0) {}
     let result = false;
     for (let i = 0; i < data.length; i++) {
       let dataObject = data[i];
